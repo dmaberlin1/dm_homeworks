@@ -1,6 +1,7 @@
 package com.dmadev.java.part5.objects;
 
-import task5.math.Vector3d;
+
+import com.dmadev.java.part5.math.Vector3d;
 
 public class CelestialBody extends SpaceObject implements Visible {
     public String name;
@@ -18,7 +19,7 @@ public class CelestialBody extends SpaceObject implements Visible {
     @Override
     public String getObjectInfo() {
         return String.format("Celestial body info =========\n-- Name: %s\n-- Position: %s\n-- Radius: %e\n-- Velocity: %s\n-- Mass: %e\n-- Kinetic energy: %e\n==================\n",
-            name,
+                (Object) name,
             position,
             radius,
             velocity,
